@@ -1,8 +1,20 @@
 body {
     background-color: #236467;
+    font-family: sans-serif;
 }
 
-section {
+h2{
+    text-decoration: underline;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.mainContent {
+    border-style: solid;
+    border-color: #000808;
     background-color: #66989a;
     color: #fcffff;
     width: 400px;
@@ -10,9 +22,19 @@ section {
     border-radius: 5%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
-img {
-    width: 100px;
-    height: 100px;
+#search {
+    padding: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    width: 200px;;
+    border: none;
+}
+
+#searchButton {
+    padding: 6px;
+    font-size: 15px;
 }

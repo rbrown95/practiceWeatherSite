@@ -4,19 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="Scripts/index.js"></script>
     <title>Weather App</title>
   </head>
   <body onload="getWeather()">
-    <section>
-        <header>
-            <article>
-                <p id="location"></p>
-            </article> 
-            <h1 id="temperature"></h1>
-            <h2 id="description"></h2>
-            <img id="weatherImage" src="" alt="Weather Status Icon">
-        </header>      
+    <section class="mainContent" id="searchSection">
+        <input placeholder="Ex. Los Angeles,CA or 90001" id="search">
+        <button type="button" id="searchButton" onclick="search()"><i class="fa fa-search"></i></button>
+    </section>
+    <section class="mainContent" id="locSection">
+      <h2>Location</h2>
+      <h3 id="location"></h3>
+    </section>
+    <section class="mainContent" id="tempSection">
+      <h2>Temp</h2> 
+      <h3 id="temperature"></h3>
+    </section>
+    <section class="mainContent" id="condSection" style="background-image: url(Images/cloudy.svg);">
+      <h2>Conditions</h2>
+      <h3 id="description"></h3>
     </section>
   </body>
 </html>
