@@ -7,11 +7,6 @@ h2{
     text-decoration: underline;
 }
 
-img {
-    width: 100px;
-    height: 100px;
-}
-
 .mainContent {
     border-style: solid;
     border-color: #000808;
